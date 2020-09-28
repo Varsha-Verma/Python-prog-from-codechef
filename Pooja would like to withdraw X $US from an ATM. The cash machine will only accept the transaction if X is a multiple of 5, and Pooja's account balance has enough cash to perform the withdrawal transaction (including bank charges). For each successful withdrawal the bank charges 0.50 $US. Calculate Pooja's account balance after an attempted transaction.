@@ -1,7 +1,12 @@
+#For taking two input for amount to ve redeemed and total amount is there in account respectively.
 x = int(input(" "))
 y = int(input(" "))
-if(int(x)%5==0):
-    if(x<y):
-        print(round((y-x-0.5),2))
+
+if(int(x)%5==0):  #if amount is multiple of 5 then only it should process further
+    if(x<y):  #Also amount entered to be redeemed should be smaller than total amount in account for successful transaction
+        print(round((y-x-0.5),2))   #For every successful transaction bank will deduct 0.50$ and amount will be roundoff to 2 digits
     else:
-        print(y)
+        print(y)  #if y is greater than x or amount enter to redeemed is greater than total amount in account then it should give output as total amount in account
+        
+else:
+    print(y)  # if amount is not a multiple of 5 then it should give output as total amount in account

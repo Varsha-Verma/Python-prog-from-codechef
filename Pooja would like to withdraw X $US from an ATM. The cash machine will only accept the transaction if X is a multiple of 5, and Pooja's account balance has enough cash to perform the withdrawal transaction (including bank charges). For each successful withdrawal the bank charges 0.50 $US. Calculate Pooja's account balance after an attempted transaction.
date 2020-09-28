@@ -10,3 +10,5 @@ if(int(x)%5==0):  #if amount is multiple of 5 then only it should process furthe
         
 else:
     print(y)  # if amount is not a multiple of 5 then it should give output as total amount in account
+    
+#Happy coding

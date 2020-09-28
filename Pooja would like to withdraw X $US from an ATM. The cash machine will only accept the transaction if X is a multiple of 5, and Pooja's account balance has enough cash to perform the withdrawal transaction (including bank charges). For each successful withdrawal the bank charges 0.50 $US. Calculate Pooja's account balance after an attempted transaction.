@@ -1,0 +1,7 @@
+x = int(input(" "))
+y = int(input(" "))
+if(int(x)%5==0):
+    if(x<y):
+        print(round((y-x-0.5),2))
+    else:
+        print(y)

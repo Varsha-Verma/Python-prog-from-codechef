@@ -1,0 +1,8 @@
+x, y = map(float,input().split())
+if x%5==0 and y>=x+0.50:
+    z=y-x-0.50
+    print("%.2f"%z)
+elif x>y or x+0.50>y or x%5!=0:
+    print("%.2f"%y)
+elif x%5==0 and y<x+0.50:
+    print("%.2f"%y)
